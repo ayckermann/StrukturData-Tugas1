@@ -3,6 +3,7 @@
 #include<windows.h>
 #define MAX 5
 
+using namespace std;
 void gotoxy(int x, int y)
 {
     COORD coord;
@@ -11,8 +12,6 @@ void gotoxy(int x, int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
 }
 
-
-using namespace std;
 struct paket
 {
     char jenis_brg[30];
